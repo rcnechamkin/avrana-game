@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "project": "Avrana Game",
+  "entrypoint": "README.md",
+  "agent_instructions": "CLAUDE.md",
+  "read_order": [
+    "docs/00-AGENT-START-HERE.md",
+    "docs/01-DESIGN-CONTRACT.md",
+    "docs/02-GAME-LOOP-AND-SHIP-SYSTEMS.md",
+    "docs/03-MISSION-AND-OBJECTIVES.md",
+    "docs/04-AI-COMMS-AND-TRUST.md",
+    "docs/05-SCORING-AND-ENDGAME.md",
+    "docs/06-MVP-ROADMAP-AND-OPEN-QUESTIONS.md",
+    "docs/07-DECISION-REGISTER.md"
+  ],
+  "status_vocabulary": {
+    "LOCKED": "Preserve unless Cody explicitly revisits it",
+    "PROVISIONAL": "Testable preferred direction",
+    "OPEN": "Unresolved",
+    "FUTURE": "Deferred",
+    "EXAMPLE": "Illustrative only"
+  },
+  "document_status": "MIXED",
+  "project_url": "https://linear.app/avranakern/project/avrana-game-2a67ee269acb",
+  "provenance_note": "REPO-NOTES.md",
+  "documents": [
+    {
+      "path": "docs/00-AGENT-START-HERE.md",
+      "title": "00 — Agent Start Here",
+      "source_url": "https://linear.app/avranakern/document/00-agent-start-here-c1ff1836f284",
+      "source_updated_at": "2026-09-29T01:45:54.534Z",
+      "body_preserved": true
+    },
+    {
+      "path": "docs/01-DESIGN-CONTRACT.md",
+      "title": "01 — Design Contract",
+      "source_url": "https://linear.app/avranakern/document/01-design-contract-d2790c42e4f5",
+      "source_updated_at": "2026-09-29T01:45:56.452Z",
+      "body_preserved": true
+    },
+    {
+      "path": "docs/02-GAME-LOOP-AND-SHIP-SYSTEMS.md",
+      "title": "02 — Game Loop & Ship Systems",
+      "source_url": "https://linear.app/avranakern/document/02-game-loop-and-ship-systems-d8c923670c83",
+      "source_updated_at": "2026-09-29T01:45:58.401Z",
+      "body_preserved": true
+    },
+    {
+      "path": "docs/03-MISSION-AND-OBJECTIVES.md",
+      "title": "03 — Mission & Objectives",
+      "source_url": "https://linear.app/avranakern/document/03-mission-and-objectives-4fe605b7e4e0",
+      "source_updated_at": "2026-09-29T01:46:01.508Z",
+      "body_preserved": true
+    },
+    {
+      "path": "docs/04-AI-COMMS-AND-TRUST.md",
+      "title": "04 — AI, Comms & Trust",
+      "source_url": "https://linear.app/avranakern/document/04-ai-comms-and-trust-4a589d3532b4",
+      "source_updated_at": "2026-09-29T01:46:04.814Z",
+      "body_preserved": true
+    },
+    {
+      "path": "docs/05-SCORING-AND-ENDGAME.md",
+      "title": "05 — Scoring & Endgame",
+      "source_url": "https://linear.app/avranakern/document/05-scoring-and-endgame-ac7e7cd6693b",
+      "source_updated_at": "2026-09-29T01:46:06.475Z",
+      "body_preserved": true
+    },
+    {
+      "path": "docs/06-MVP-ROADMAP-AND-OPEN-QUESTIONS.md",
+      "title": "06 — MVP Roadmap & Open Questions",
+      "source_url": "https://linear.app/avranakern/document/06-mvp-roadmap-and-open-questions-b21f055647d1",
+      "source_updated_at": "2026-09-29T01:46:07.973Z",
+      "body_preserved": true
+    },
+    {
+      "path": "docs/07-DECISION-REGISTER.md",
+      "title": "07 — Decision Register",
+      "source_url": "https://linear.app/avranakern/document/07-decision-register-df8f13105e58",
+      "source_updated_at": "2026-09-29T01:50:06.952Z",
+      "body_preserved": true
+    }
+  ]
+}
