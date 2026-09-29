@@ -1,57 +1,80 @@
 ---
-project: Avrana Game
-source: https://linear.app/avranakern/document/00-agent-start-here-c1ff1836f284
-source_updated_at: 2026-09-29T01:45:54.534Z
-status: MIXED
+doc_type: agent_entrypoint
+project: avrana-game
+status: discovery
+canonical: true
+version: 0.1
+updated: 2026-09-28
 ---
 
-# Avrana Game — Agent Start Here
+# Agent Start Here
 
 ## Purpose
 
-This is the first original first-party Avrana game, developed as a standalone game project.
+This folder captures the current design state for Avrana Game, developed as an independent game project.
 
-**Do not couple this project to the Avrana Party device/appliance.** No Pi, Party Home, captive portal, package format, deployment, or hardware assumption should be required to make game-design progress.
+The working project name is **Avrana Game**; the final game title remains open.
 
-Treat the game as:
+Agents should treat these files as a **working design contract**, not as a finished specification.
 
-* an authoritative multiplayer game server;
-* private phone/browser clients;
-* a game state that can later be adapted to Avrana Party.
+## Standalone scope
 
-## Read next
+Treat the runtime as an authoritative multiplayer game server plus private phone/browser clients. Pi hardware, Party Home, appliance networking, captive portals, .avrgame packaging, and device deployment are not prerequisites. Avrana Party may consume the proven game through a later integration.
 
-1. Design Contract
-2. Game Loop & Ship Systems
-3. Mission & Objectives
-4. AI, Comms & Trust
-5. Scoring & Endgame
-6. MVP Roadmap & Open Questions
+Read [REPO-NOTES.md](REPO-NOTES.md) for provenance and unresolved source status ambiguity. Read 10-DECISION-REGISTER.md after the ordered topic docs.
 
-## Status vocabulary
+## Core premise
 
-* **LOCKED**: preserve unless Cody explicitly revisits it.
-* **PROVISIONAL**: current preferred direction; validate through playtesting.
-* **OPEN**: unresolved; do not silently invent a canonical answer.
-* **FUTURE**: deliberately deferred.
-* **EXAMPLE**: illustrative, not canonical content.
+A phone-native cooperative starship crisis game where:
 
-## Agent rules
+- the ship-maintenance game is strategically meaningful on its own;
+- all players use private phone screens;
+- players make decisions under incomplete or asymmetric information;
+- an AI acts as a fifth participant with its own motives, limits, bargains, and possible deceptions;
+- human Primary Objectives may sometimes diverge from the public Mission;
+- players may consciously change alignment or objectives during play;
+- some sessions may contain no hostile humans at all;
+- victory and score are separate concepts.
 
-* Prefer the smallest experiment that tests the uncertain assumption.
-* Do not add a mechanic merely because it fits the theme.
-* The ship game must be fun without betrayal.
-* Do not assume a traitor exists.
-* In-person play may not rely on forbidding spoken communication.
-* AI motive and AI integrity are different.
-* Victory and score are different.
-* Technical depth belongs under the hood; player-facing decisions should remain legible.
-* Uncertainty must be investigable rather than arbitrary.
+## Read order
 
-## Core shorthand
+1. `01-DESIGN-CONTRACT.md`
+2. `02-GAME-LOOP.md`
+3. `03-SHIP-SYSTEMS.md`
+4. `04-MISSION-AND-OBJECTIVES.md`
+5. `05-AI-AND-SOCIAL-SYSTEMS.md`
+6. `06-COMMS-TRUST-AND-DECEPTION.md`
+7. `07-SCORING-AND-ENDGAME.md`
+8. `08-MVP-ROADMAP.md`
+9. `09-OPEN-QUESTIONS.md`
+
+## Agent behavior rules
+
+When proposing implementation or design changes:
+
+- Preserve all `LOCKED` decisions unless explicitly asked to revisit them.
+- Treat `PROVISIONAL` decisions as current direction, not permanent truth.
+- Treat `OPEN` items as unresolved.
+- Prefer the smallest playable experiment that tests one uncertain assumption.
+- Do not add systems merely because they are thematically appropriate.
+- New mechanics should create meaningful player decisions.
+- The cooperative ship game must remain interesting without betrayal.
+- Do not assume a human traitor exists in every session.
+- Do not make in-person play depend on players being forbidden to speak.
+- Do not convert technical concepts into jargon-heavy player UI.
+- Do not make the AI omniscient by default.
+- Do not let points override whether a player's Primary Objective succeeded.
+
+## Design shorthand
 
 **Deep state, shallow interface.**
 
-**Complex consequences, simple choices.**
+The simulation may be complex internally, but the player should usually face a small number of legible choices with understandable consequences.
+
+**Uncertainty should be investigable, not arbitrary.**
+
+Players can lack certainty, but should have actions, evidence, redundancy, logs, repairs, or other means to improve confidence.
 
 **The ship game comes first.**
+
+Do not use hidden motives, deception, AI behavior, or social deduction to rescue a weak cooperative resource-management loop.

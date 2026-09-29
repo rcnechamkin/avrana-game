@@ -2,17 +2,23 @@
 
 ## Provenance
 
-The eight canonical design documents were retrieved from the independent Avrana Game Linear project created in the referenced ChatGPT conversation. Their Markdown bodies are preserved verbatim; only YAML source metadata was prepended. Source URLs and update timestamps appear in each document and the manifest.
+The canonical design docs now come from the user-supplied Avrana_First_Party_Game_Agent_Docs.zip, version 0.1, dated 2026-09-28. All eleven Markdown documents and the original document structure have been imported. The manifest records the archive SHA-256 and original document hashes for reproducible provenance.
 
-The original eleven-file ChatGPT ZIP and its manifest were not accessible in this session. This repository uses the recoverable eight-document canonical Linear version; it does not claim byte-for-byte recovery of that ZIP. README.md, CLAUDE.md, this note, and manifest.json are repository additions.
+The earlier eight-document Linear import is superseded as the repo's canonical doc set and remains available in Git history. Linear itself was not edited by this update. The standalone project remains [Avrana Game](https://linear.app/avranakern/project/avrana-game-2a67ee269acb).
+
+## Scope adaptation
+
+The archive predates the explicit standalone-project request and identifies the game as an Avrana Party game. The user's standalone requirement governs this repository. Only 00-AGENT-START-HERE.md, 01-DESIGN-CONTRACT.md, and 10-DECISION-REGISTER.md were adapted: project identity, working title, server authority, appliance independence, and repository reading guidance. The other eight Markdown documents are unchanged from the archive. The manifest uses the standalone project identifier and adds provenance and repo entrypoints while preserving source statuses and read order.
+
+No mechanics, balance values, examples, or design status distinctions were promoted or settled during import. Frontmatter such as discovery, provisional, mixed, or canonical describes a document; section-level LOCKED/PROVISIONAL/OPEN/FUTURE/EXAMPLE labels retain their meaning. Compound labels such as LOCKED FOR MVP and LOCKED PRINCIPLE are preserved.
 
 ## OPEN: Source status ambiguity
 
-- docs/03-MISSION-AND-OBJECTIVES.md labels divergent Primaries PROVISIONAL.
-- docs/07-DECISION-REGISTER.md lists occasional setup divergence under LOCKED.
+- 04-MISSION-AND-OBJECTIVES.md labels divergent starting Primaries PROVISIONAL.
+- 10-DECISION-REGISTER.md lists occasional setup divergence under LOCKED.
 
-Both source statements are preserved. Do not silently decide whether the lock covers only the design's capability while frequency/content remain provisional, or a broader commitment. The cooperative first prototype still excludes divergent human Primaries in the roadmap.
+The original archive contains both statements, so it does not eliminate this ambiguity. Both are preserved. Do not silently decide whether the lock covers only the capability while frequency/content remain provisional, or a broader commitment. The cooperative first prototype still excludes divergent human Primaries in 08-MVP-ROADMAP.md. Resolve the distinction explicitly when implementation depends on it.
 
 ## Reading guidance
 
-The separate open-questions section is in docs/06-MVP-ROADMAP-AND-OPEN-QUESTIONS.md. Later roadmap features remain deferred even when their underlying design concepts are LOCKED. No stack, numeric balance, probability, objective catalog, or exact action-conflict resolution was approved by this import.
+09-OPEN-QUESTIONS.md is the dedicated unresolved-question register. 08-MVP-ROADMAP.md includes prototype success criteria. Later roadmap features remain deferred even when their underlying design concepts are LOCKED. No stack, numeric balance, probability, objective catalog, or exact action-conflict resolution was approved by this import.

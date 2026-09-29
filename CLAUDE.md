@@ -12,14 +12,17 @@ Read README.md, then:
 
 1. docs/00-AGENT-START-HERE.md
 2. docs/01-DESIGN-CONTRACT.md
-3. docs/02-GAME-LOOP-AND-SHIP-SYSTEMS.md
-4. docs/03-MISSION-AND-OBJECTIVES.md
-5. docs/04-AI-COMMS-AND-TRUST.md
-6. docs/05-SCORING-AND-ENDGAME.md
-7. docs/06-MVP-ROADMAP-AND-OPEN-QUESTIONS.md
-8. docs/07-DECISION-REGISTER.md
+3. docs/02-GAME-LOOP.md
+4. docs/03-SHIP-SYSTEMS.md
+5. docs/04-MISSION-AND-OBJECTIVES.md
+6. docs/05-AI-AND-SOCIAL-SYSTEMS.md
+7. docs/06-COMMS-TRUST-AND-DECEPTION.md
+8. docs/07-SCORING-AND-ENDGAME.md
+9. docs/08-MVP-ROADMAP.md
+10. docs/09-OPEN-QUESTIONS.md
+11. docs/10-DECISION-REGISTER.md
 
-Also read docs/REPO-NOTES.md before resolving ambiguities. Use docs/manifest.json for source URLs and machine-readable order. Follow the active task's relevant sections after this initial read.
+Also read docs/REPO-NOTES.md before resolving ambiguities. Use docs/manifest.json for source archive hashes and machine-readable order. Follow the active task's relevant sections after this initial read.
 
 ## Preserve design distinctions
 
@@ -29,7 +32,7 @@ Also read docs/REPO-NOTES.md before resolving ambiguities. Use docs/manifest.jso
 - FUTURE: defer until requested or its roadmap gate is met.
 - EXAMPLE: illustrative only; do not automatically generate canonical content from it.
 
-MIXED is document metadata, not a sixth design status. Preserve compound source labels such as FUTURE/PROVISIONAL and LOCKED CONCEPT. Do not silently upgrade or downgrade source decisions. If docs conflict, identify both statements and record the ambiguity; obtain a design decision when implementation depends on resolving it.
+Document-level frontmatter is metadata; section labels govern decisions. Preserve compound source labels such as FUTURE / PROVISIONAL, LOCKED CONCEPT, LOCKED FOR MVP, and LOCKED PRINCIPLE. Do not silently upgrade or downgrade source decisions. If docs conflict, identify both statements and record the ambiguity; obtain a design decision when implementation depends on resolving it.
 
 ## Non-negotiable design invariants
 
@@ -54,7 +57,7 @@ Prefer the smallest experiment that tests the uncertain assumption. Record playt
 
 ## Repository workflow
 
-This initial repository is documentation-only. No implementation stack, build, or test commands exist yet. Do not invent claims that software has been built, tested, or playtested.
+This repository is documentation-only. No implementation stack, build, or test commands exist yet. Do not invent claims that software has been built, tested, or playtested.
 
 Before editing, inspect repository state and applicable instructions. Keep changes scoped to the current task and preserve existing work. Validate local Markdown links, manifest paths, read order, and status consistency after documentation changes. For later implementation, add appropriate run/test instructions when the stack is selected and test meaningful behavior: server authority, private information, objective transitions, action resolution, and outcome separation.
 

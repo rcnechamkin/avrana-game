@@ -10,14 +10,17 @@ Read [CLAUDE.md](CLAUDE.md), then the canonical docs in this order:
 
 1. [00-AGENT-START-HERE.md](docs/00-AGENT-START-HERE.md)
 2. [01-DESIGN-CONTRACT.md](docs/01-DESIGN-CONTRACT.md)
-3. [02-GAME-LOOP-AND-SHIP-SYSTEMS.md](docs/02-GAME-LOOP-AND-SHIP-SYSTEMS.md)
-4. [03-MISSION-AND-OBJECTIVES.md](docs/03-MISSION-AND-OBJECTIVES.md)
-5. [04-AI-COMMS-AND-TRUST.md](docs/04-AI-COMMS-AND-TRUST.md)
-6. [05-SCORING-AND-ENDGAME.md](docs/05-SCORING-AND-ENDGAME.md)
-7. [06-MVP-ROADMAP-AND-OPEN-QUESTIONS.md](docs/06-MVP-ROADMAP-AND-OPEN-QUESTIONS.md)
-8. [07-DECISION-REGISTER.md](docs/07-DECISION-REGISTER.md)
+3. [02-GAME-LOOP.md](docs/02-GAME-LOOP.md)
+4. [03-SHIP-SYSTEMS.md](docs/03-SHIP-SYSTEMS.md)
+5. [04-MISSION-AND-OBJECTIVES.md](docs/04-MISSION-AND-OBJECTIVES.md)
+6. [05-AI-AND-SOCIAL-SYSTEMS.md](docs/05-AI-AND-SOCIAL-SYSTEMS.md)
+7. [06-COMMS-TRUST-AND-DECEPTION.md](docs/06-COMMS-TRUST-AND-DECEPTION.md)
+8. [07-SCORING-AND-ENDGAME.md](docs/07-SCORING-AND-ENDGAME.md)
+9. [08-MVP-ROADMAP.md](docs/08-MVP-ROADMAP.md)
+10. [09-OPEN-QUESTIONS.md](docs/09-OPEN-QUESTIONS.md)
+11. [10-DECISION-REGISTER.md](docs/10-DECISION-REGISTER.md)
 
-[docs/manifest.json](docs/manifest.json) provides the machine-readable read order and source metadata. [docs/REPO-NOTES.md](docs/REPO-NOTES.md) records provenance and unresolved source ambiguity.
+[docs/manifest.json](docs/manifest.json) provides the machine-readable read order and original archive provenance. [docs/REPO-NOTES.md](docs/REPO-NOTES.md) records provenance and unresolved source ambiguity.
 
 ## Design status
 
@@ -27,12 +30,12 @@ Read [CLAUDE.md](CLAUDE.md), then the canonical docs in this order:
 - **FUTURE**: deliberately deferred.
 - **EXAMPLE**: illustrative, not canonical content.
 
-Document-level `MIXED` frontmatter means individual sections retain their own statuses. Candidate lists and examples are not blanket commitments.
+Document frontmatter describes the document as a whole; section-level status labels govern individual decisions. Candidate lists and examples are not blanket commitments.
 
 ## First proof
 
 Prove that four loyal humans with a trustworthy AI can have a tense, interesting cooperative ship game before adding divergent objectives, deception, recruitment, communication warfare, escape pods, or advanced scenarios.
 
-This initial repository contains design documentation only. No implementation stack, build command, runtime generative model, or gameplay tuning values have been selected by this import.
+This repository contains design documentation only. No implementation stack, build command, runtime generative model, or gameplay tuning values have been selected by this import.
 
 [Standalone Linear project](https://linear.app/avranakern/project/avrana-game-2a67ee269acb)

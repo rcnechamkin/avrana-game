@@ -1,84 +1,105 @@
 {
-  "schema_version": 1,
-  "project": "Avrana Game",
-  "entrypoint": "README.md",
-  "agent_instructions": "CLAUDE.md",
-  "read_order": [
-    "docs/00-AGENT-START-HERE.md",
-    "docs/01-DESIGN-CONTRACT.md",
-    "docs/02-GAME-LOOP-AND-SHIP-SYSTEMS.md",
-    "docs/03-MISSION-AND-OBJECTIVES.md",
-    "docs/04-AI-COMMS-AND-TRUST.md",
-    "docs/05-SCORING-AND-ENDGAME.md",
-    "docs/06-MVP-ROADMAP-AND-OPEN-QUESTIONS.md",
-    "docs/07-DECISION-REGISTER.md"
+  "project": "avrana-game",
+  "status": "discovery",
+  "version": "0.1",
+  "entrypoint": "00-AGENT-START-HERE.md",
+  "repository_entrypoint": "../README.md",
+  "agent_instructions": "../CLAUDE.md",
+  "canonical_docs": [
+    "00-AGENT-START-HERE.md",
+    "01-DESIGN-CONTRACT.md",
+    "02-GAME-LOOP.md",
+    "03-SHIP-SYSTEMS.md",
+    "04-MISSION-AND-OBJECTIVES.md",
+    "05-AI-AND-SOCIAL-SYSTEMS.md",
+    "06-COMMS-TRUST-AND-DECEPTION.md",
+    "07-SCORING-AND-ENDGAME.md",
+    "08-MVP-ROADMAP.md",
+    "09-OPEN-QUESTIONS.md",
+    "10-DECISION-REGISTER.md"
   ],
-  "status_vocabulary": {
-    "LOCKED": "Preserve unless Cody explicitly revisits it",
-    "PROVISIONAL": "Testable preferred direction",
-    "OPEN": "Unresolved",
-    "FUTURE": "Deferred",
-    "EXAMPLE": "Illustrative only"
+  "recommended_read_order": [
+    "00-AGENT-START-HERE.md",
+    "01-DESIGN-CONTRACT.md",
+    "02-GAME-LOOP.md",
+    "03-SHIP-SYSTEMS.md",
+    "04-MISSION-AND-OBJECTIVES.md",
+    "05-AI-AND-SOCIAL-SYSTEMS.md",
+    "06-COMMS-TRUST-AND-DECEPTION.md",
+    "07-SCORING-AND-ENDGAME.md",
+    "08-MVP-ROADMAP.md",
+    "09-OPEN-QUESTIONS.md",
+    "10-DECISION-REGISTER.md"
+  ],
+  "status_terms": {
+    "LOCKED": "Preserve unless user explicitly revisits.",
+    "PROVISIONAL": "Current preferred direction; may change with testing.",
+    "OPEN": "Unresolved. Do not silently assume.",
+    "FUTURE": "Deliberately deferred beyond initial prototype/MVP.",
+    "EXAMPLE": "Illustrative only; not canonical data."
   },
-  "document_status": "MIXED",
-  "project_url": "https://linear.app/avranakern/project/avrana-game-2a67ee269acb",
-  "provenance_note": "REPO-NOTES.md",
+  "source": {
+    "filename": "Avrana_First_Party_Game_Agent_Docs.zip",
+    "sha256": "315c907fc4217abe5f6b233e4c3e0cbdd919c3d04c627f92348d47a30560dcb6",
+    "source_project": "avrana-party-first-party-game",
+    "source_version": "0.1"
+  },
+  "adaptation_notes": "REPO-NOTES.md",
   "documents": [
     {
-      "path": "docs/00-AGENT-START-HERE.md",
-      "title": "00 — Agent Start Here",
-      "source_url": "https://linear.app/avranakern/document/00-agent-start-here-c1ff1836f284",
-      "source_updated_at": "2026-09-29T01:45:54.534Z",
-      "body_preserved": true
+      "path": "00-AGENT-START-HERE.md",
+      "source_sha256": "ce5f2cd54e7c535111667fcba6d47a3ab9e17654a59103bab93f6b8b1536087a",
+      "adapted": true
     },
     {
-      "path": "docs/01-DESIGN-CONTRACT.md",
-      "title": "01 — Design Contract",
-      "source_url": "https://linear.app/avranakern/document/01-design-contract-d2790c42e4f5",
-      "source_updated_at": "2026-09-29T01:45:56.452Z",
-      "body_preserved": true
+      "path": "01-DESIGN-CONTRACT.md",
+      "source_sha256": "21e77a71cbcee1a5e73be472b61e4bea384357549b79b7874c2e042b54f4bdff",
+      "adapted": true
     },
     {
-      "path": "docs/02-GAME-LOOP-AND-SHIP-SYSTEMS.md",
-      "title": "02 — Game Loop & Ship Systems",
-      "source_url": "https://linear.app/avranakern/document/02-game-loop-and-ship-systems-d8c923670c83",
-      "source_updated_at": "2026-09-29T01:45:58.401Z",
-      "body_preserved": true
+      "path": "02-GAME-LOOP.md",
+      "source_sha256": "178f5c11b779de570905df9bc042e0af37c58c12a545ff825ad66d70ae3a036a",
+      "adapted": false
     },
     {
-      "path": "docs/03-MISSION-AND-OBJECTIVES.md",
-      "title": "03 — Mission & Objectives",
-      "source_url": "https://linear.app/avranakern/document/03-mission-and-objectives-4fe605b7e4e0",
-      "source_updated_at": "2026-09-29T01:46:01.508Z",
-      "body_preserved": true
+      "path": "03-SHIP-SYSTEMS.md",
+      "source_sha256": "325f9f63fb591e163985632e8700aa78a8ecacae36d6b72c3a40bbebbe45e0fc",
+      "adapted": false
     },
     {
-      "path": "docs/04-AI-COMMS-AND-TRUST.md",
-      "title": "04 — AI, Comms & Trust",
-      "source_url": "https://linear.app/avranakern/document/04-ai-comms-and-trust-4a589d3532b4",
-      "source_updated_at": "2026-09-29T01:46:04.814Z",
-      "body_preserved": true
+      "path": "04-MISSION-AND-OBJECTIVES.md",
+      "source_sha256": "422caba3cb245266b56fb32b9fba4d51c43e504e23415c421048e36a0c9651f5",
+      "adapted": false
     },
     {
-      "path": "docs/05-SCORING-AND-ENDGAME.md",
-      "title": "05 — Scoring & Endgame",
-      "source_url": "https://linear.app/avranakern/document/05-scoring-and-endgame-ac7e7cd6693b",
-      "source_updated_at": "2026-09-29T01:46:06.475Z",
-      "body_preserved": true
+      "path": "05-AI-AND-SOCIAL-SYSTEMS.md",
+      "source_sha256": "fa4fd63330e29abda9f60c4a6ff5f98cd0b04484d610e1d2456d710304d44080",
+      "adapted": false
     },
     {
-      "path": "docs/06-MVP-ROADMAP-AND-OPEN-QUESTIONS.md",
-      "title": "06 — MVP Roadmap & Open Questions",
-      "source_url": "https://linear.app/avranakern/document/06-mvp-roadmap-and-open-questions-b21f055647d1",
-      "source_updated_at": "2026-09-29T01:46:07.973Z",
-      "body_preserved": true
+      "path": "06-COMMS-TRUST-AND-DECEPTION.md",
+      "source_sha256": "0be27bbeddafa77b83057d9e9810ae3c985b775b2aae66fd5f1a48bcdd12af48",
+      "adapted": false
     },
     {
-      "path": "docs/07-DECISION-REGISTER.md",
-      "title": "07 — Decision Register",
-      "source_url": "https://linear.app/avranakern/document/07-decision-register-df8f13105e58",
-      "source_updated_at": "2026-09-29T01:50:06.952Z",
-      "body_preserved": true
+      "path": "07-SCORING-AND-ENDGAME.md",
+      "source_sha256": "49425b5dd3e36a48b40493fb3e23faa1a0a613d8e494cf97c3de06c1f42441e6",
+      "adapted": false
+    },
+    {
+      "path": "08-MVP-ROADMAP.md",
+      "source_sha256": "9a481bd1d796ce52f932a09e4c91a126efcedf503e8c08312934d753ee12c218",
+      "adapted": false
+    },
+    {
+      "path": "09-OPEN-QUESTIONS.md",
+      "source_sha256": "c82d242686b540a9336d4367006efe56733ad7873a6e92f6d4050d9562eb5a99",
+      "adapted": false
+    },
+    {
+      "path": "10-DECISION-REGISTER.md",
+      "source_sha256": "59a678c1983a1a99f897072b49af9eea70048f487744d7cfc781185c4dde609d",
+      "adapted": true
     }
   ]
 }
